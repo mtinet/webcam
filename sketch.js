@@ -10,6 +10,6 @@ function setup() {
 }
 
 function draw() {
-  image(video, 230, 320, width, height);
+  image(video, 0, 0, width, height);
 }
   
