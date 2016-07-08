@@ -20,3 +20,4 @@ function draw() {
     particles[i].update();
     particle[i].show();
   }
+}
