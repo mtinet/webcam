@@ -10,6 +10,6 @@ function setup() {
 }
 
 function draw() {
-  tint(255,100, 150);
+  tint(50, 100, 150);
   image(video, 0, 0, mouseX, height);
 }
