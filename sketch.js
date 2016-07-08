@@ -7,19 +7,19 @@ function setup() {
   video = createCapture(VIDEO);
   video.size(640, 480);
   video.id('p5video');
-  //video.hide();
-  //slider = createSlider(0, 1, 0.5, 0.01);
-  //slider.id('blur-slider');
+  video.hide();
+  slider = createSlider(0, 1, 0.5, 0.01);
+  slider.id('blur-slider');
 
   var seriously = new Seriously();
 
   var src = seriously.source('#p5video');
   var target = seriously.target('#p5canvas');
 
-  // var blur = seriously.effect('blur');
-  // blur.amount = '#blur-slider';
-  // blur.source = src;
-  // target.source = blur;
+  var blur = seriously.effect('blur');
+  blur.amount = '#blur-slider';
+  blur.source = src;
+  target.source = blur;
 
   var chroma = seriously.effect('chroma');
   chroma.source = src;
